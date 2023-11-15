@@ -1,0 +1,80 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body { 
+    background-color: whitesmoke;
+    color: rgb(29, 29, 29);
+    transition: 0.5s ease-in-out;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.fondo {
+    background-color: #28DA00;
+}
+
+.fondoBtn {
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    padding: 0.2rem 1rem;
+    border: 2px solid rgb(230, 230, 230);
+}
+
+.fondoBtn:hover{
+    background-color: rgb(224, 224, 224);
+    border: 2px solid black;
+    color: black;
+}
+
+/* ---- MODO NOCTURNO ---- */
+
+input[type="checkbox"] {
+    position: relative;
+    width: 40px;
+    height: 20px;
+    background-color: rgb(202, 202, 202);
+    appearance: none;
+    outline: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+input[type="checkbox"]:checked {
+    background-color: rgb(43, 43, 43);
+}
+
+input[type="checkbox"]::before {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background-color: #f2f2f2;
+    border-radius: 50%;
+    top: 2px;
+    left: 2px;
+    transition: 0.7s ease;
+}
+
+input[type="checkbox"]:checked::before {
+    transform: translateX(20px);
+}
+
+.modo-noche {
+    background-color: rgb(29, 29, 29);
+    color: #f2f2f2;
+}
+
+/* ---- FOOTER ---- */
+
+footer {
+    background-color: #28DA00;
+}
